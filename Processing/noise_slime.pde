@@ -1,3 +1,4 @@
+// experimenting with perlin noise
 float xstep = 3;
 float ystep = 3;
 float wave = sin(.412);
