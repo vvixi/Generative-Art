@@ -1,2 +1,2 @@
 # Generative-Art
-Experiments in Processing
+Experiments creating generative art in Processing and Python.
