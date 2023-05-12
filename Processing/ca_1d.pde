@@ -1,4 +1,4 @@
-// basic 1D Cellular Automata in P3 by vvixi
+// basic 1D Cellular Automata by vvixi
 float t;
 CA ca;
 
@@ -20,6 +20,7 @@ void draw() {
 
 class CA {
   int[] cells;
+  int[] rules = {0,0,0,0,0,0,0,0};
   int generation;
   //int[] rules = {0,0,1,1,0,1,1,0}; // 54
   //int[] rules = {1,0,1,1,0,1,1,0}; //182
@@ -28,14 +29,16 @@ class CA {
   //int[] rules = {0,1,1,1,1,1,0,1}; // Rule 190
   //int[] rules = {0,1,1,1,1,0,0,0}; // Rule 30
   //int[] rules = {0,1,1,1,0,1,1,0}; // Rule 110
-  //int[] rules = {0,1,0,1,1,0,1,0}; // Rule 90
-  int[] rules = {int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2))};
+  //int[] rules = {0,1,0,1,1,0,1,0}; // Rule 9
   int w = 5;
   
   CA() {
     cells = new int[width/w];
     for (int i = 0; i < cells.length; i++) {
       cells[i] = 0;
+    }
+    for(int i = 0; i < 8; i++) {
+      rules[i] = int(random(2));
     }
     cells[cells.length/2] = 1;
     generation = 0;
