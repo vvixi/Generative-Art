@@ -1,8 +1,9 @@
-// basic 1D Cellular Automata by vvixi
+// basic 1D Cellular Automata in P3 by vvixi
 float t;
 CA ca;
 
 void setup() {
+  surface.setTitle("1D Cellular Automata");
   size(600, 600);
   frameRate(12);
   background(255);
@@ -27,7 +28,8 @@ class CA {
   //int[] rules = {0,1,1,1,1,1,0,1}; // Rule 190
   //int[] rules = {0,1,1,1,1,0,0,0}; // Rule 30
   //int[] rules = {0,1,1,1,0,1,1,0}; // Rule 110
-  int[] rules = {0,1,0,1,1,0,1,0}; // Rule 90
+  //int[] rules = {0,1,0,1,1,0,1,0}; // Rule 90
+  int[] rules = {int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2)), int(random(2))};
   int w = 5;
   
   CA() {
