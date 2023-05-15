@@ -2,15 +2,14 @@
 float ang;
 float c;
 void setup() {
+  surface.setTitle("Yin");
   size(600, 600);
   background(20);
   colorMode(HSB, 360);
 }
 void draw() {
-  //background(10, 10);
-  fill(100+c, c%100, 360, 10);
-  //noFill();
   
+  fill(100+c, c%100, 360, 10);
   for (int i = 0; i < 10;i++) {
     pushMatrix();
     translate(width/2, height/2);
