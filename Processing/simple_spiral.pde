@@ -2,7 +2,8 @@
 float ang, time;
 
 void setup() {
-  size(400, 400);
+  surface.setTitle("Simple Spiral");
+  size(600, 600);
   background(0);
 }
 
