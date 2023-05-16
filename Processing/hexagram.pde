@@ -11,7 +11,6 @@ void draw() {
   stroke(co, 100, 100, 100);
   noFill();
   triangle(width/2, height-time%width/2, 0+time%width/2, 0+time%width/2, width-time%width/2, 0+time%width/2);
-  // up tri
   triangle(width/2, 0+time%width/2, width-1-time%width/2, height-1-time%width/2, 0+time%width/2, height-1-time%width/2);
   time+=10;
   co+=.5;
