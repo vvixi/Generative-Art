@@ -3,6 +3,8 @@
 float hLen;
 float a, b, c, d;
 void setup() {
+
+  surface.setTitle("Bezier Tracer");
   size(600, 600);
   //fullScreen();
   background(20);
@@ -13,6 +15,7 @@ void setup() {
 }
 
 void draw() {
+
   background(20,90);
   stroke(random(200), random(200), 200);
   noFill();
