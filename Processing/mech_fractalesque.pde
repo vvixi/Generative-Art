@@ -1,9 +1,15 @@
+// Generative art in P4 by vvixi
 float time;
+
 void setup() {
-  size(400, 400);
+  
+  surface.setTitle("Mech Fractalesque");
+  size(600, 600);
   background(20);
 }
 void draw() {
+  
+  float w = width / 4;
   float a = sin(time);
   //fill(a, 140, 13);
   fill(160,0, 190, 20);
@@ -12,25 +18,25 @@ void draw() {
   pushMatrix();
   translate(width/2, height/2);
   //rotate(radians(time));
-  rect(a+random(100), a+random(100), 100+(a/10), 100+a/10);
+  rect(a+random(w), a+random(w), w+(a/10), w+a/10);
   popMatrix();
   pushMatrix();
   //translate(width/2, height/2);
   fill(13, 140, 191, 20);
   translate(0, 0);
-  rect(a+random(100), a+random(100), 100+(a/10), 100+a/10);
+  rect(a+random(w), a+random(w), w+(a/10), w+a/10);
   popMatrix();
   pushMatrix();
   translate(width/2, 0);
   //rotate(radians(time));
-  rect(a+random(100), a+random(100), 100+(a/10), 100+a/10);
+  rect(a+random(w), a+random(w), w+(a/10), w+a/10);
   popMatrix();
   pushMatrix();
   translate(0, height/2);
   //rotate(radians(time));
-  rect(a+random(100), a+random(100), 100+(a/10), 100+a/10);
+  rect(a+random(w), a+random(w), w+(a/10), w+a/10);
   popMatrix();
-  time+=100+random(1000);
+  time+=w+random(1000);
   
   if (time > width) {
     time = 0;
