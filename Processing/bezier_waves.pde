@@ -1,9 +1,10 @@
 // generative art in P3 by vvixi
-// bezier waves
 int c, x=100;
 int cenX, cenY, leftX, upY, rightX, lowY;
 
 void setup() {
+
+  surface.setTitle("Bezier Waves");
   noFill();
   frameRate(6);
   smooth();
@@ -16,6 +17,7 @@ void setup() {
   
 }
 void draw() {
+
   strokeWeight(1);
   background(0);
   stroke(c,200,200);
